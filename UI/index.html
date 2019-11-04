@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Internal Social Network" />
+	<meta name="author" content="Tunezerwane Patrick" />
+    <title>Teamwork</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Team<span>Work</span> app</h1>
+        <hr>
+        <div class="form-toggle">
+            <button id="login" onclick="Login()">Log in</button>
+            <button id="signup" onclick="Signup()">Sign up</button>
+        </div>
+        <div id="login-form">
+            <form >
+                <input type="text" required placeholder="Enter email"/>
+                <input type="password" required placeholder="Enter password"/>
+                <a href="html/recentlyArticles.html"><button type="button" class="btn login">login</button></a>
+                <p><a href="html/adminLogin.html">Admin</a></p>
+            </form>
+        </div>
+    
+        <div id="signup-form">
+            <form>
+                <input type="text" placeholder="Enter your First Name"/>
+                <input type="text" placeholder="Enter your Last Name"/>
+                <input type="email" placeholder="Enter your email"/>
+                <select name="" id="select-gender">
+                    <option class="option" value="male"> Male</option>
+                    <option class="option" value="female"> Female</option>
+                </select>
+                <input type="text" placeholder="Job Role"/> 
+                <input type="text" placeholder="Department"/>
+                <input type="text" placeholder="Address"/>
+                <input type="password" placeholder="Create a password"/>
+                <a href="index.html"><button type="button" class="btn signup">create account</button></a>
+            </form>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+</body>
+</html>

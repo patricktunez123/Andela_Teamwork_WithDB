@@ -1,0 +1,153 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background:#fff;
+    font-family: sans-serif;
+}
+
+.container{
+    position:relative;
+    width:450px;
+    height:auto;
+    margin-top:4em;
+    left:50%;
+    transform:translateX(-50%);
+    background:#fff;
+    border-radius: 3px;
+    border: 1px solid #7FDBFF;
+}
+.container h1, h3{
+    color: #1E1F26;
+    text-align: center;
+}
+.container button{
+    cursor: pointer;
+    position: relative;
+    font-size:1em;
+    z-index: 2;
+    outline: none;
+    background:#fff;
+    transition:0.2s;
+}
+
+.container .btn{
+    border-radius: 3px;
+    border:none;
+    font-size:1.2em;
+    padding:0.8em 1em 0.8em 1em!important;
+    transition:0.5s;
+    border:1px solid #ebebeb;
+    margin-bottom:0.5em;
+    margin-top:0.5em;
+}
+
+.container .login , .container .signup{
+    background:#1E1F26;
+    color:#fff;
+}
+
+.container .login:hover , .container .signup:hover{
+    background:#333d42;
+}
+
+.form-toggle{
+    position: relative;
+    width:100%;
+    height:auto;
+}
+
+.form-toggle button{
+    width:50%;
+    float:left;
+    padding:1.5em;
+    margin-bottom:1.5em;
+    border: none;
+    transition: 0.2s;
+    font-size:1.1em;
+}
+
+#login{
+    background:#7FDBFF;
+    color:#1E1F26;
+}
+
+.container form{
+    position: relative;
+    width:90%;
+    height:auto;
+    left:50%;
+    transform:translateX(-50%);  
+}
+
+#login-form , #signup-form{
+    position:relative;
+    width:100%;
+    height:auto;
+    padding-bottom:1em;
+}
+#login-form ::placeholder{
+    color: #b1aaaa;
+    font-style: italic;
+}
+#signup-form ::placeholder{
+    color: #b1aaaa;
+    font-style: italic;
+}
+#signup-form{
+    display: none;
+}
+
+
+#login-form button , #signup-form button{
+    width:100%;
+    margin-top:0.5em;
+    padding:0.6em;
+    font-size: 16px;
+}
+
+.container input, select{
+    position: relative;
+    width:100%;
+    padding:1.2em 1.7em 1.2em 1.7em;
+    margin-top:0.6em;
+    margin-bottom:0.6em;
+    border-radius: 3px;
+    border: 1px solid #7FDBFF;
+    background:#ebebeb;
+    outline:none;
+    transition:0.1s;
+}
+
+.container input, select:focus , .container input, select:active{
+    transform:scaleX(1.02);
+}
+#select-gender .option{
+    background:#ebebeb;
+    border-radius: 3px;
+}
+.container p{
+    font-size:15px;
+    font-weight: 30px;
+}
+
+.container p a{
+    color:#1E1F26;
+    text-decoration: none;
+    transition:0.2s;
+}
+
+.container p a:hover{
+    color:#333d42;
+}
+
+@media only screen and (max-width:500px){
+    .container{
+        width:100%;
+    }
+    .form-toggle{
+        font-size: 13px;
+    }
+}
